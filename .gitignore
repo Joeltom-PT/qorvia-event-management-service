@@ -1,0 +1,40 @@
+# Maven build directory
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# VS Code
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Java specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot specific
+*.keystore
+
+# Help file
+HELP.md
