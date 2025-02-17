@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: event-management-service-deployment
+  labels:
+    app: event-management-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: event-management-service
+  template:
+    metadata:
+      labels:
+        app: event-management-service
+    spec:
+      containers:
+        - name: event-management-service
+          image: joeltompt/event-management-service:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: event-management-service-secrets
