@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: event-management-service
-          image: joeltompt/event-management-service:latest
+          image: joeltompt/qorvia-event-management-service:latest
           ports:
             - containerPort: 8080
           envFrom:
