@@ -35,3 +35,6 @@ Thumbs.db
 
 # Help file
 HELP.md
+
+#Secrets
+k8s/secrets.yaml
